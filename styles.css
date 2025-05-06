@@ -1,0 +1,166 @@
+:root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Quicksand", sans-serif;
+  --third-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--primary-color);
+  margin: 0;
+
+  ul {
+    list-style: none;
+  }
+}
+
+.container {
+  padding: 0 400px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 25px 0;
+}
+
+img {
+  width: 200px;
+  height: 35px;
+}
+
+main {
+  padding: 35px 0 150px 0;
+
+  h4 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 131%;
+    color: #7690a8;
+  }
+
+  p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--text);
+  }
+
+  .our-services {
+    color: #7690A8;
+  }
+
+  h2 {
+    font-family: var(--third-family);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    color: var(--text);
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 40px;
+
+    li {
+      align-items: start;
+      padding: 40px;
+      border-radius: 8px;
+      border: 1px solid #E5EAF4;
+
+      &:hover {
+        border: 1px solid #3DB370;
+        border-radius: 8px;
+
+        [fill="#D1E7FF"] {
+          fill: #E1F4F5;
+        }
+
+        [fill="#E8F3FF"] {
+          fill: #F4FEFF;
+        }
+
+        [fill="#B9DCFF"] {
+          fill: #CAEFF2;
+        }
+
+        [fill="#007FFC"] {
+          fill: #3DB370;
+        }
+      }
+
+      li:hover {
+        border-color: #3DB370;
+      }
+
+      a {
+        color: #3DB370;
+        text-decoration: none;
+      }
+
+      a:visited {
+        color: #3DB370;
+      }
+    }
+  }
+}
+
+footer {
+  padding-top: 40px;
+  background-color: #16133D;
+  display: flex;
+  flex-direction: column;
+  padding: 0 400px;
+  height: 235px;
+  justify-content: space-between;
+
+  .f-content {
+    padding: 50px 0 0 0;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    gap: 12px;
+
+    li {
+
+      button {
+        border-radius: 5px;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        border: none;
+      }
+
+      svg {
+        width: 20px;
+        height: 20px;
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 0.2s ease-in-out;
+      }
+
+      svg:hover {
+        border-radius: 5px;
+        fill: #3DB370;
+        background-color: white;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
